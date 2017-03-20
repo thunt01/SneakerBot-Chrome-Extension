@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="container" onLoad="setSizes()">
+		<h1>SneakerBot</h1>
+		<div class="well well-sm">
+			<h3 id="demo">Size:</h3>
+			<div class="form-group">
+				<select id="sex" name="sex">
+					<option value="m">Men's</option>
+					<option value="w">Women's</option>
+				</select>
+
+				<select id="size" name="size">
+					<option value="6.5">6.5</option>
+					<option value="7">7</option>
+					<option value="7.5">7.5</option>
+					<option value="8">8</option>
+					<option value="8.5">8.5</option>
+					<option value="9">9</option>
+					<option value="9.5">9.5</option>
+					<option value="10">10</option>
+					<option value="10.5">10.5</option>
+					<option value="11">11</option>
+					<option value="11.5">11.5</option>
+					<option value="12">12</option>
+					<option value="12.5">12.5</option>
+					<option value="13">13</option>
+					<option value="13.5">13.5</option>
+					<option value="14">14</option>
+					<option value="14.5">14.5</option>
+					<option value="15">15</option>
+					<option value="15.5">15.5</option>
+					<option value="16">16</option>
+					<option value="16.5">16.5</option>
+					<option value="17">17</option>
+					<option value="17.5">17.5</option>
+					<option value="18">18</option>
+				<select>
+			</div>
+			<h3 id="demo">Stores:</h3>
+			<div class="form-group">
+				<div class="checkbox">
+				  <label><input type="checkbox" id="nike">Nike</label>
+				</div>
+				<div class="checkbox">
+				  <label><input type="checkbox" id="adidas">Adidas</label>
+				</div>
+				<div class="checkbox disabled">
+				  <label><input type="checkbox" id="footlocker">Footlocker</label>
+				</div>
+			</div>
+		</div>
+		<div class="form-group">
+			<button id="save" type="button" class="btn btn-info btn-sm">Save</button>
+		</div>		
+	</div>
+	<script src="main.js"></script>
+
+</body>
+</html>

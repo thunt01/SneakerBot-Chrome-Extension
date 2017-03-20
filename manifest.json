@@ -1,0 +1,20 @@
+{
+	"name": "SneakerBot",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "Fastest way to buy sneakers!",
+	"browser_action": {
+		"default_icon": "icon2.png",
+		"default_title": "SneakerBot",
+		"default_popup": "pop.html"
+	},
+	"permissions": [
+      "storage","tabs", "*://*.nike.com/*"
+    ],
+	"content_scripts": [ {
+      "matches": [ "*://*.nike.com/us/en_us/pd/*" ],
+      "js": [ "cart.js" ]
+   } ]
+
+
+}
